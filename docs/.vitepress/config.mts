@@ -22,21 +22,18 @@ export default defineConfig({
 
     sidebar: {
       '/repositorios': [
-        {
-          text: 'Por Linguagem',
-          items: [
-          { text: 'JavaScript (104)', link: '/repositorios#javascript' },
-          { text: 'TypeScript (103)', link: '/repositorios#typescript' },
-          { text: 'Outros (80)', link: '/repositorios#outros' },
-          { text: 'C# (37)', link: '/repositorios#c-' },
-          { text: 'Python (29)', link: '/repositorios#python' },
-          { text: 'Java (20)', link: '/repositorios#java' },
-          { text: 'HTML (15)', link: '/repositorios#html' },
-          { text: 'Shell (4)', link: '/repositorios#shell' },
-          { text: 'Kotlin (4)', link: '/repositorios#kotlin' },
-          { text: 'C (4)', link: '/repositorios#c' }
-          ],
-        },
+        { text: 'Top linguagens', items: [{ text: 'TypeScript (104)', link: '/catalogo/repositorios' },
+          { text: 'JavaScript (104)', link: '/catalogo/repositorios' },
+          { text: 'C# (37)', link: '/catalogo/repositorios' },
+          { text: 'Python (30)', link: '/catalogo/repositorios' },
+          { text: 'Java (20)', link: '/catalogo/repositorios' },
+          { text: 'HTML (15)', link: '/catalogo/repositorios' },
+          { text: 'Shell (4)', link: '/catalogo/repositorios' },
+          { text: 'Kotlin (4)', link: '/catalogo/repositorios' },
+          { text: 'C (4)', link: '/catalogo/repositorios' },
+          { text: 'Go (4)', link: '/catalogo/repositorios' },
+          { text: 'CSS (4)', link: '/catalogo/repositorios' },
+          { text: 'Dart (3)', link: '/catalogo/repositorios' }] },
       ],
     },
 
@@ -49,11 +46,6 @@ export default defineConfig({
     footer: {
       message: 'Atualizado automaticamente todo dia via GitHub Actions',
       copyright: 'juninmd · 2026',
-    },
-
-    editLink: {
-      pattern: 'https://github.com/juninmd/catalogo',
-      text: 'Ver no GitHub',
     },
   },
 })
