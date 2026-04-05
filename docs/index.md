@@ -26,15 +26,15 @@ features:
     details: "Visíveis apenas para você"
   - icon: "💻"
     title: "Top linguagem"
-    details: "TypeScript (104 repos)"
+    details: "JavaScript (104 repos)"
 ---
 
 ## Atualizados recentemente
 
 | Repositório | Descrição | Linguagem | Último push |
 |---|---|---|---|
-| [**vtuber-ai**](https://github.com/juninmd/vtuber-ai) | Sem descrição | TypeScript | hoje |
 | [**catalogo**](https://github.com/juninmd/catalogo) | Catálogo automático de todos os repositórios — atualizado diariamente via GitHub | JavaScript | hoje |
+| [**vtuber-ai**](https://github.com/juninmd/vtuber-ai) | Sem descrição | TypeScript | hoje |
 | [**init-vm-ssh**](https://github.com/juninmd/init-vm-ssh) | Instala o que é necessário para uma VM | Shell | hoje |
 | [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
 | [**vibe-kanban**](https://github.com/juninmd/vibe-kanban) | Sem descrição | TypeScript | hoje |
