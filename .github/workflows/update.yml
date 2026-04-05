@@ -1,0 +1,82 @@
+name: Atualizar Catálogo
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Todo dia às 06:00 UTC (03:00 Brasília)
+  workflow_dispatch:       # Permite rodar manualmente
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'docs/.vitepress/**'
+      - 'package.json'
+
+permissions:
+  contents: write   # Para commitar os arquivos gerados
+  pages: write      # Para fazer deploy no GitHub Pages
+  id-token: write   # Necessário para deploy no GitHub Pages
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  generate-and-deploy:
+    name: Gerar e Publicar Catálogo
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Instalar dependências
+        run: pnpm install --frozen-lockfile
+
+      - name: Gerar páginas a partir da API do GitHub
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_USER: juninmd
+        run: pnpm run generate
+
+      - name: Verificar se houve mudanças
+        id: diff
+        run: |
+          git diff --quiet docs/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commitar arquivos gerados
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/index.md docs/repositorios.md docs/.vitepress/config.mts
+          git commit -m "chore: atualiza catálogo — $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Build VitePress
+        run: pnpm run build
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artefato para Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

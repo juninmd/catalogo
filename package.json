@@ -1,0 +1,19 @@
+{
+  "name": "catalogo",
+  "version": "1.0.0",
+  "description": "Catálogo automático de repositórios GitHub — juninmd",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "dev": "node scripts/generate.mjs && vitepress dev docs",
+    "build": "node scripts/generate.mjs && vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
