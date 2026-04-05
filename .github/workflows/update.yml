@@ -5,10 +5,9 @@ on:
     - cron: '0 6 * * *'   # Todo dia às 06:00 UTC (03:00 Brasília)
   workflow_dispatch:       # Permite rodar manualmente
   push:
-    branches: [main]
+    branches: [main, master]
     paths:
       - 'scripts/**'
-      - 'docs/.vitepress/**'
       - 'package.json'
 
 permissions:
