@@ -24,8 +24,8 @@ export default defineConfig({
         {
           text: 'Por Linguagem',
           items: [
+          { text: 'JavaScript (104)', link: '/repositorios#javascript' },
           { text: 'TypeScript (103)', link: '/repositorios#typescript' },
-          { text: 'JavaScript (103)', link: '/repositorios#javascript' },
           { text: 'Outros (80)', link: '/repositorios#outros' },
           { text: 'C# (37)', link: '/repositorios#c-' },
           { text: 'Python (29)', link: '/repositorios#python' },
