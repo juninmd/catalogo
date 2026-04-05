@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Catálogo · juninmd',
   description: 'Catálogo automático de todos os repositórios de juninmd',
   lang: 'pt-BR',
+  base: '/catalogo/',
   cleanUrls: true,
 
   head: [
@@ -14,8 +15,8 @@ export default defineConfig({
     logo: 'https://github.com/juninmd.png',
 
     nav: [
-      { text: 'Início', link: '/' },
-      { text: 'Repositórios', link: '/repositorios' },
+      { text: 'Início', link: '/catalogo/' },
+      { text: 'Repositórios', link: '/catalogo/repositorios' },
       { text: 'GitHub', link: 'https://github.com/juninmd', target: '_blank' },
     ],
 

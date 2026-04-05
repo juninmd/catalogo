@@ -145,7 +145,7 @@ hero:
   actions:
     - theme: brand
       text: Ver todos os repositórios →
-      link: /repositorios
+      link: /catalogo/repositorios
     - theme: alt
       text: GitHub
       link: https://github.com/${GH_USER}
@@ -161,7 +161,7 @@ ${featuresCards}
 ${recentSection}
 
 <div style="text-align:center;margin-top:2rem">
-  <a href="/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
+  <a href="/catalogo/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
     Ver os ${total} repositórios →
   </a>
 </div>
@@ -230,6 +230,7 @@ export default defineConfig({
   title: 'Catálogo · juninmd',
   description: 'Catálogo automático de todos os repositórios de juninmd',
   lang: 'pt-BR',
+  base: '/catalogo/',
   cleanUrls: true,
 
   head: [
@@ -240,8 +241,8 @@ export default defineConfig({
     logo: 'https://github.com/${GH_USER}.png',
 
     nav: [
-      { text: 'Início', link: '/' },
-      { text: 'Repositórios', link: '/repositorios' },
+      { text: 'Início', link: '/catalogo/' },
+      { text: 'Repositórios', link: '/catalogo/repositorios' },
       { text: 'GitHub', link: 'https://github.com/${GH_USER}', target: '_blank' },
     ],
 
