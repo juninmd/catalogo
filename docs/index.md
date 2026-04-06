@@ -5,7 +5,7 @@ title: Catálogo de Repositórios
 hero:
   name: "juninmd"
   text: "Catálogo de Repositórios"
-  tagline: "430 repositórios · 319 públicos · 111 privados · atualizado em 05 de abr. de 2026"
+  tagline: "430 repositórios · 319 públicos · 111 privados · atualizado em 06 de abr. de 2026"
   actions:
     - theme: brand
       text: Ver todos os repositórios →
@@ -26,19 +26,19 @@ features:
     details: "Visíveis apenas para você"
   - icon: "💻"
     title: "Top linguagem"
-    details: "JavaScript (104 repos)"
+    details: "TypeScript (104 repos)"
 ---
 
 ## Atualizados recentemente
 
 | Repositório | Descrição | Linguagem | Último push |
 |---|---|---|---|
-| [**catalogo**](https://github.com/juninmd/catalogo) | Catálogo automático de todos os repositórios — atualizado diariamente via GitHub | JavaScript | hoje |
+| [**meu-livro-2**](https://github.com/juninmd/meu-livro-2) | Sem descrição | Python | hoje |
 | [**vtuber-ai**](https://github.com/juninmd/vtuber-ai) | Sem descrição | TypeScript | hoje |
-| [**init-vm-ssh**](https://github.com/juninmd/init-vm-ssh) | Instala o que é necessário para uma VM | Shell | hoje |
-| [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
+| [**queima-buchinho**](https://github.com/juninmd/queima-buchinho) | Sem descrição | TypeScript | hoje |
+| [**meu-livro**](https://github.com/juninmd/meu-livro) | Sem descrição | Python | hoje |
 | [**vibe-kanban**](https://github.com/juninmd/vibe-kanban) | Sem descrição | TypeScript | hoje |
-| [**meu-livro3**](https://github.com/juninmd/meu-livro3) | Sem descrição | — | hoje |
+| [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
 
 <div style="text-align:center;margin-top:2rem">
   <a href="/catalogo/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
