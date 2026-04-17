@@ -5,7 +5,7 @@ title: Catálogo de Repositórios
 hero:
   name: "juninmd"
   text: "Catálogo de Repositórios"
-  tagline: "433 repositórios · 320 públicos · 113 privados · atualizado em 16 de abr. de 2026"
+  tagline: "434 repositórios · 320 públicos · 114 privados · atualizado em 17 de abr. de 2026"
   actions:
     - theme: brand
       text: Ver todos os repositórios →
@@ -16,32 +16,32 @@ hero:
 
 features:
   - icon: "📦"
-    title: "433 Repositórios"
-    details: "337 originais · 96 forks"
+    title: "434 Repositórios"
+    details: "338 originais · 96 forks"
   - icon: "🌐"
     title: "320 Públicos"
     details: "Acessíveis por qualquer pessoa"
   - icon: "🔒"
-    title: "113 Privados"
+    title: "114 Privados"
     details: "Visíveis apenas para você"
   - icon: "💻"
     title: "Top linguagem"
-    details: "TypeScript (105 repos)"
+    details: "TypeScript (106 repos)"
 ---
 
 ## Atualizados recentemente
 
 | Repositório | Descrição | Linguagem | Último push |
 |---|---|---|---|
-| [**meu-livro-2**](https://github.com/juninmd/meu-livro-2) | Sem descrição | Python | hoje |
-| [**vtuber-ai**](https://github.com/juninmd/vtuber-ai) | Sem descrição | TypeScript | hoje |
-| [**vibe-kanban**](https://github.com/juninmd/vibe-kanban) | Sem descrição | TypeScript | hoje |
-| [**confluence-summarizer**](https://github.com/juninmd/confluence-summarizer) | Sem descrição | Python | hoje |
 | [**mika**](https://github.com/juninmd/mika) | Mika — AI VTuber companion that lives on your screen. Text/voice chat, screen vi | TypeScript | hoje |
-| [**jules-orchestrator**](https://github.com/juninmd/jules-orchestrator) | Sem descrição | TypeScript | hoje |
+| [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
+| [**copilot-master**](https://github.com/juninmd/copilot-master) | Sem descrição | JavaScript | hoje |
+| [**pac-memory**](https://github.com/juninmd/pac-memory) | Autonomous PAC-MEMORY knowledge CLI with Gemini evolution, SQLite knowledge grap | TypeScript | hoje |
+| [**init-vm-ssh**](https://github.com/juninmd/init-vm-ssh) | Instala o que é necessário para uma VM | Shell | hoje |
+| [**github-assistance**](https://github.com/juninmd/github-assistance) | Sem descrição | Python | hoje |
 
 <div style="text-align:center;margin-top:2rem">
   <a href="/catalogo/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
-    Ver os 433 repositórios com filtros →
+    Ver os 434 repositórios com filtros →
   </a>
 </div>
