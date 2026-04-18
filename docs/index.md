@@ -5,7 +5,7 @@ title: Catálogo de Repositórios
 hero:
   name: "juninmd"
   text: "Catálogo de Repositórios"
-  tagline: "434 repositórios · 320 públicos · 114 privados · atualizado em 17 de abr. de 2026"
+  tagline: "434 repositórios · 320 públicos · 114 privados · atualizado em 18 de abr. de 2026"
   actions:
     - theme: brand
       text: Ver todos os repositórios →
@@ -33,12 +33,12 @@ features:
 
 | Repositório | Descrição | Linguagem | Último push |
 |---|---|---|---|
-| [**mika**](https://github.com/juninmd/mika) | Mika — AI VTuber companion that lives on your screen. Text/voice chat, screen vi | TypeScript | hoje |
+| [**vibe-kanban**](https://github.com/juninmd/vibe-kanban) | Sem descrição | TypeScript | hoje |
+| [**quiz-shorts-generator**](https://github.com/juninmd/quiz-shorts-generator) | Sem descrição | TypeScript | hoje |
+| [**queima-buchinho**](https://github.com/juninmd/queima-buchinho) | Sem descrição | TypeScript | hoje |
 | [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
-| [**copilot-master**](https://github.com/juninmd/copilot-master) | Sem descrição | JavaScript | hoje |
-| [**pac-memory**](https://github.com/juninmd/pac-memory) | Autonomous PAC-MEMORY knowledge CLI with Gemini evolution, SQLite knowledge grap | TypeScript | hoje |
-| [**init-vm-ssh**](https://github.com/juninmd/init-vm-ssh) | Instala o que é necessário para uma VM | Shell | hoje |
-| [**github-assistance**](https://github.com/juninmd/github-assistance) | Sem descrição | Python | hoje |
+| [**vtuber-ai**](https://github.com/juninmd/vtuber-ai) | Sem descrição | TypeScript | hoje |
+| [**mika**](https://github.com/juninmd/mika) | Mika — AI VTuber companion that lives on your screen. Text/voice chat, screen vi | TypeScript | hoje |
 
 <div style="text-align:center;margin-top:2rem">
   <a href="/catalogo/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
