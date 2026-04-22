@@ -9,12 +9,12 @@ COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
 COPY . .
-# We don't run generate here because it's done by the other workflow and pushed to the repo
-RUN pnpm run build
+# We skip 'pnpm run build' because it runs 'generate.mjs' which needs GH_TOKEN.
+# The files are already generated and pushed to the repo by the other workflow.
+RUN pnpm exec vitepress build docs
 
 # Final stage
 FROM nginx:alpine
-# VitePress default output is docs/.vitepress/dist
 COPY --from=builder /app/docs/.vitepress/dist /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
