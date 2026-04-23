@@ -4,7 +4,7 @@ export default defineConfig({
   title: 'Catálogo · juninmd',
   description: 'Catálogo automático de todos os repositórios de juninmd',
   lang: 'pt-BR',
-  base: '/catalogo/',
+  base: '/',
   cleanUrls: true,
 
   head: [
@@ -15,25 +15,25 @@ export default defineConfig({
     logo: 'https://github.com/juninmd.png',
 
     nav: [
-      { text: 'Início', link: '/catalogo/' },
-      { text: 'Repositórios', link: '/catalogo/repositorios' },
+      { text: 'Início', link: '/' },
+      { text: 'Repositórios', link: '/repositorios' },
       { text: 'GitHub', link: 'https://github.com/juninmd', target: '_blank' },
     ],
 
     sidebar: {
       '/repositorios': [
-        { text: 'Top linguagens', items: [{ text: 'TypeScript (107)', link: '/catalogo/repositorios' },
-          { text: 'JavaScript (105)', link: '/catalogo/repositorios' },
-          { text: 'C# (37)', link: '/catalogo/repositorios' },
-          { text: 'Python (30)', link: '/catalogo/repositorios' },
-          { text: 'Java (20)', link: '/catalogo/repositorios' },
-          { text: 'HTML (15)', link: '/catalogo/repositorios' },
-          { text: 'Dockerfile (4)', link: '/catalogo/repositorios' },
-          { text: 'Kotlin (4)', link: '/catalogo/repositorios' },
-          { text: 'Shell (4)', link: '/catalogo/repositorios' },
-          { text: 'C (4)', link: '/catalogo/repositorios' },
-          { text: 'Go (4)', link: '/catalogo/repositorios' },
-          { text: 'CSS (4)', link: '/catalogo/repositorios' }] },
+        { text: 'Top linguagens', items: [{ text: 'TypeScript (107)', link: '/repositorios' },
+          { text: 'JavaScript (104)', link: '/repositorios' },
+          { text: 'C# (37)', link: '/repositorios' },
+          { text: 'Python (30)', link: '/repositorios' },
+          { text: 'Java (20)', link: '/repositorios' },
+          { text: 'HTML (16)', link: '/repositorios' },
+          { text: 'Dockerfile (4)', link: '/repositorios' },
+          { text: 'Kotlin (4)', link: '/repositorios' },
+          { text: 'Shell (4)', link: '/repositorios' },
+          { text: 'C (4)', link: '/repositorios' },
+          { text: 'Go (4)', link: '/repositorios' },
+          { text: 'CSS (4)', link: '/repositorios' }] },
       ],
     },
 

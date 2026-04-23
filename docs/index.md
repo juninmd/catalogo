@@ -5,11 +5,11 @@ title: Catálogo de Repositórios
 hero:
   name: "juninmd"
   text: "Catálogo de Repositórios"
-  tagline: "436 repositórios · 322 públicos · 114 privados · atualizado em 22 de abr. de 2026"
+  tagline: "436 repositórios · 322 públicos · 114 privados · atualizado em 23 de abr. de 2026"
   actions:
     - theme: brand
       text: Ver todos os repositórios →
-      link: /catalogo/repositorios
+      link: /repositorios
     - theme: alt
       text: GitHub
       link: https://github.com/juninmd
@@ -33,15 +33,15 @@ features:
 
 | Repositório | Descrição | Linguagem | Último push |
 |---|---|---|---|
-| [**vtuber-ai**](https://github.com/juninmd/vtuber-ai) | Sem descrição | TypeScript | hoje |
-| [**mika**](https://github.com/juninmd/mika) | Mika — AI VTuber companion that lives on your screen. Text/voice chat, screen vi | TypeScript | hoje |
-| [**pobre-lingo**](https://github.com/juninmd/pobre-lingo) | Sem descrição | TypeScript | hoje |
-| [**quiz-shorts-generator**](https://github.com/juninmd/quiz-shorts-generator) | Sem descrição | TypeScript | hoje |
-| [**meu-livro3**](https://github.com/juninmd/meu-livro3) | Sem descrição | Dockerfile | hoje |
-| [**stars-mito**](https://github.com/juninmd/stars-mito) | Sem descrição | TypeScript | hoje |
+| [**catalogo**](https://github.com/juninmd/catalogo) | Catálogo automático de todos os repositórios — atualizado diariamente via GitHub | JavaScript | hoje |
+| [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
+| [**doctor-ai-infra**](https://github.com/juninmd/doctor-ai-infra) | Sem descrição | Python | hoje |
+| [**confluence-summarizer**](https://github.com/juninmd/confluence-summarizer) | Sem descrição | Python | hoje |
+| [**vibe-kanban**](https://github.com/juninmd/vibe-kanban) | Sem descrição | TypeScript | hoje |
+| [**fast-news**](https://github.com/juninmd/fast-news) | Sem descrição | HTML | hoje |
 
 <div style="text-align:center;margin-top:2rem">
-  <a href="/catalogo/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
+  <a href="/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
     Ver os 436 repositórios com filtros →
   </a>
 </div>
