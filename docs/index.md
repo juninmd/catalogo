@@ -33,12 +33,12 @@ features:
 
 | Repositório | Descrição | Linguagem | Último push |
 |---|---|---|---|
-| [**catalogo**](https://github.com/juninmd/catalogo) | Catálogo automático de todos os repositórios — atualizado diariamente via GitHub | JavaScript | hoje |
+| [**meu-livro**](https://github.com/juninmd/meu-livro) | Sem descrição | Python | hoje |
+| [**mika**](https://github.com/juninmd/mika) | Mika — AI VTuber companion that lives on your screen. Text/voice chat, screen vi | TypeScript | hoje |
+| [**roadmap-developer**](https://github.com/juninmd/roadmap-developer) | Sem descrição | TypeScript | hoje |
+| [**Instagram-Simple-Downloader**](https://github.com/juninmd/Instagram-Simple-Downloader) | Add a simple button to download photos and videos from feed (Beta Version). | JavaScript | hoje |
+| [**github-assistance**](https://github.com/juninmd/github-assistance) | Sem descrição | Python | hoje |
 | [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
-| [**doctor-ai-infra**](https://github.com/juninmd/doctor-ai-infra) | Sem descrição | Python | hoje |
-| [**confluence-summarizer**](https://github.com/juninmd/confluence-summarizer) | Sem descrição | Python | hoje |
-| [**vibe-kanban**](https://github.com/juninmd/vibe-kanban) | Sem descrição | TypeScript | hoje |
-| [**fast-news**](https://github.com/juninmd/fast-news) | Sem descrição | HTML | hoje |
 
 <div style="text-align:center;margin-top:2rem">
   <a href="/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
