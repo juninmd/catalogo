@@ -22,7 +22,7 @@ export default defineConfig({
 
     sidebar: {
       '/repositorios': [
-        { text: 'Top linguagens', items: [{ text: 'TypeScript (107)', link: '/repositorios' },
+        { text: 'Top linguagens', items: [{ text: 'TypeScript (108)', link: '/repositorios' },
           { text: 'JavaScript (104)', link: '/repositorios' },
           { text: 'C# (37)', link: '/repositorios' },
           { text: 'Python (31)', link: '/repositorios' },
