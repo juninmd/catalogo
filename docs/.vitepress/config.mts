@@ -23,13 +23,13 @@ export default defineConfig({
     sidebar: {
       '/repositorios': [
         { text: 'Top linguagens', items: [{ text: 'TypeScript (108)', link: '/repositorios' },
-          { text: 'JavaScript (104)', link: '/repositorios' },
+          { text: 'JavaScript (105)', link: '/repositorios' },
           { text: 'C# (37)', link: '/repositorios' },
           { text: 'Python (31)', link: '/repositorios' },
           { text: 'Java (20)', link: '/repositorios' },
           { text: 'HTML (15)', link: '/repositorios' },
-          { text: 'Kotlin (4)', link: '/repositorios' },
           { text: 'Dockerfile (4)', link: '/repositorios' },
+          { text: 'Kotlin (4)', link: '/repositorios' },
           { text: 'Shell (4)', link: '/repositorios' },
           { text: 'C (4)', link: '/repositorios' },
           { text: 'Go (4)', link: '/repositorios' },
