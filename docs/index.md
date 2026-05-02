@@ -5,7 +5,7 @@ title: Catálogo de Repositórios
 hero:
   name: "juninmd"
   text: "Catálogo de Repositórios"
-  tagline: "438 repositórios · 324 públicos · 114 privados · atualizado em 01 de mai. de 2026"
+  tagline: "438 repositórios · 324 públicos · 114 privados · atualizado em 02 de mai. de 2026"
   actions:
     - theme: brand
       text: Ver todos os repositórios →
@@ -33,12 +33,12 @@ features:
 
 | Repositório | Descrição | Linguagem | Último push |
 |---|---|---|---|
-| [**mika**](https://github.com/juninmd/mika) | Mika — AI VTuber companion that lives on your screen. Text/voice chat, screen vi | TypeScript | hoje |
-| [**vtuber-ai**](https://github.com/juninmd/vtuber-ai) | Sem descrição | TypeScript | hoje |
-| [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
+| [**vibe-kanban**](https://github.com/juninmd/vibe-kanban) | Sem descrição | TypeScript | hoje |
+| [**vibe-code**](https://github.com/juninmd/vibe-code) | Sem descrição | TypeScript | hoje |
 | [**skills**](https://github.com/juninmd/skills) | Sem descrição | JavaScript | hoje |
-| [**server-do-junin**](https://github.com/juninmd/server-do-junin) | Sem descrição | Dockerfile | hoje |
-| [**fast-news**](https://github.com/juninmd/fast-news) | Sem descrição | JavaScript | hoje |
+| [**meu-livro**](https://github.com/juninmd/meu-livro) | Sem descrição | Python | hoje |
+| [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
+| [**github-assistance**](https://github.com/juninmd/github-assistance) | Sem descrição | Python | hoje |
 
 <div style="text-align:center;margin-top:2rem">
   <a href="/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
