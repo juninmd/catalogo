@@ -5,7 +5,7 @@ title: Catálogo de Repositórios
 hero:
   name: "juninmd"
   text: "Catálogo de Repositórios"
-  tagline: "438 repositórios · 324 públicos · 114 privados · atualizado em 02 de mai. de 2026"
+  tagline: "439 repositórios · 324 públicos · 115 privados · atualizado em 03 de mai. de 2026"
   actions:
     - theme: brand
       text: Ver todos os repositórios →
@@ -16,13 +16,13 @@ hero:
 
 features:
   - icon: "📦"
-    title: "438 Repositórios"
-    details: "339 originais · 99 forks"
+    title: "439 Repositórios"
+    details: "340 originais · 99 forks"
   - icon: "🌐"
     title: "324 Públicos"
     details: "Acessíveis por qualquer pessoa"
   - icon: "🔒"
-    title: "114 Privados"
+    title: "115 Privados"
     details: "Visíveis apenas para você"
   - icon: "💻"
     title: "Top linguagem"
@@ -33,15 +33,15 @@ features:
 
 | Repositório | Descrição | Linguagem | Último push |
 |---|---|---|---|
-| [**vibe-kanban**](https://github.com/juninmd/vibe-kanban) | Sem descrição | TypeScript | hoje |
-| [**vibe-code**](https://github.com/juninmd/vibe-code) | Sem descrição | TypeScript | hoje |
-| [**skills**](https://github.com/juninmd/skills) | Sem descrição | JavaScript | hoje |
-| [**meu-livro**](https://github.com/juninmd/meu-livro) | Sem descrição | Python | hoje |
-| [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
-| [**github-assistance**](https://github.com/juninmd/github-assistance) | Sem descrição | Python | hoje |
+| [**mika**](https://github.com/juninmd/mika) | Mika — AI VTuber companion that lives on your screen. Text/voice chat, screen vi | TypeScript | hoje |
+| [**Instagram-Simple-Downloader**](https://github.com/juninmd/Instagram-Simple-Downloader) | Add a simple button to download photos and videos from feed (Beta Version). | JavaScript | hoje |
+| [**vtuber-ai**](https://github.com/juninmd/vtuber-ai) | Sem descrição | TypeScript | hoje |
+| [**shorts-generator**](https://github.com/juninmd/shorts-generator) | Automated YouTube Shorts generator — AI-powered viral clip extraction with Whisp | TypeScript | hoje |
+| [**ai-games**](https://github.com/juninmd/ai-games) | AI-Games is an AI-powered platform that generates dynamic, customizable virtual  | — | hoje |
+| [**jules-orchestrator**](https://github.com/juninmd/jules-orchestrator) | Sem descrição | TypeScript | hoje |
 
 <div style="text-align:center;margin-top:2rem">
   <a href="/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
-    Ver os 438 repositórios com filtros →
+    Ver os 439 repositórios com filtros →
   </a>
 </div>
