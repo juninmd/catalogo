@@ -5,7 +5,7 @@ title: Catálogo de Repositórios
 hero:
   name: "juninmd"
   text: "Catálogo de Repositórios"
-  tagline: "440 repositórios · 325 públicos · 115 privados · atualizado em 05 de mai. de 2026"
+  tagline: "440 repositórios · 325 públicos · 115 privados · atualizado em 06 de mai. de 2026"
   actions:
     - theme: brand
       text: Ver todos os repositórios →
@@ -33,12 +33,12 @@ features:
 
 | Repositório | Descrição | Linguagem | Último push |
 |---|---|---|---|
+| [**shorts-generator**](https://github.com/juninmd/shorts-generator) | Automated YouTube Shorts generator — AI-powered viral clip extraction with Whisp | TypeScript | hoje |
 | [**vtuber-ai**](https://github.com/juninmd/vtuber-ai) | Sem descrição | TypeScript | hoje |
-| [**nova-ai**](https://github.com/juninmd/nova-ai) | Sem descrição | TypeScript | hoje |
 | [**Instagram-Simple-Downloader**](https://github.com/juninmd/Instagram-Simple-Downloader) | Add a simple button to download photos and videos from feed (Beta Version). | JavaScript | hoje |
-| [**copilot-master**](https://github.com/juninmd/copilot-master) | Sem descrição | Python | hoje |
-| [**jules-orchestrator**](https://github.com/juninmd/jules-orchestrator) | Sem descrição | TypeScript | hoje |
+| [**vibe-kanban**](https://github.com/juninmd/vibe-kanban) | Sem descrição | TypeScript | hoje |
 | [**tokenix**](https://github.com/juninmd/tokenix) | Local semantic index CLI that reduces LLM token usage 60-90% -- built in Rust, r | Rust | hoje |
+| [**app-charts**](https://github.com/juninmd/app-charts) | Sem descrição | Python | hoje |
 
 <div style="text-align:center;margin-top:2rem">
   <a href="/repositorios" style="background:var(--vp-c-brand-1);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">
