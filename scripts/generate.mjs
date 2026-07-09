@@ -16,7 +16,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DOCS_DIR   = join(__dirname, "../docs");
 const PUBLIC_DIR = join(__dirname, "../docs/public");
-const GH_TOKEN   = process.env.GH_TOKEN;
+const GH_TOKEN   = (process.env.GH_TOKEN || process.env.GITHUB_TOKEN);
 const GH_USER    = process.env.GH_USER || "juninmd";
 
 // ─── GitHub GraphQL ───────────────────────────────────────────────────────────
