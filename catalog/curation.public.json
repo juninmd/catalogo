@@ -1,0 +1,155 @@
+{
+  "projeto-scripts-neto-refactor": {
+    "purpose": "Minha primeira api",
+    "categories": [
+      "APIs e serviços"
+    ],
+    "source": "Descrição do package.json (curadoria)"
+  },
+  "star-wars-app": {
+    "purpose": "A Star Wars application using React Native and MobX",
+    "categories": [
+      "Mobile"
+    ],
+    "source": "Descrição do package.json (curadoria)"
+  },
+  "aniversario-core": {
+    "purpose": "Anniversary/Birthday management core API",
+    "categories": [
+      "APIs e serviços"
+    ],
+    "source": "Descrição do package.json (curadoria)"
+  },
+  "jano-oracle": {
+    "purpose": "Library that uses the `oracle` driver to keep code clean, simple, organized and with Promises",
+    "categories": [
+      "Ferramentas de desenvolvimento"
+    ],
+    "source": "Descrição do package.json (curadoria)"
+  },
+  "groovy-core": {
+    "purpose": "Api Groovy.",
+    "categories": [
+      "APIs e serviços"
+    ],
+    "source": "Descrição do package.json (curadoria)"
+  },
+  "contador-javascript": {
+    "purpose": "Página de estudo em JavaScript com um contador que permite incrementar e decrementar o número exibido.",
+    "categories": [
+      "Aplicações web"
+    ],
+    "source": "Curadoria do código: index.html; js/scripts.js",
+    "projectType": "example"
+  },
+  "cordova-plugin-test": {
+    "purpose": "Protótipo de plugin Cordova AmILate que expõe getNextAppointment. A implementação Android retorna um compromisso de teste; a consulta real ao calendário ainda não está implementada.",
+    "categories": [
+      "Mobile"
+    ],
+    "source": "Curadoria do código: plugin.xml; www/AmILate.js; src/android/AmILate.java",
+    "projectType": "prototype"
+  },
+  "doctor-cake-core": {
+    "purpose": "Repositório inicial sem aplicação implementada nesta revisão. Contém README, licença e configuração de manutenção; o produto pretendido ainda precisa ser definido.",
+    "categories": [],
+    "source": "Curadoria do código: Árvore de arquivos da branch padrão",
+    "projectType": "placeholder"
+  },
+  "farrosrafa": {
+    "purpose": "README de apresentação de perfil, com tecnologias, estatísticas do GitHub e informações de contato. Não contém uma aplicação implementada.",
+    "categories": [
+      "Documentação e estudos"
+    ],
+    "source": "Curadoria do código: README.md; árvore de arquivos",
+    "projectType": "documentation"
+  },
+  "hello-world-rust": {
+    "purpose": "Exemplo inicial de programa de terminal em Rust que imprime uma saudação personalizada e Hello, world!.",
+    "categories": [
+      "Ferramentas de desenvolvimento"
+    ],
+    "source": "Curadoria do código: main.rs",
+    "projectType": "example"
+  },
+  "jano-postgre": {
+    "purpose": "Repositório inicial sem biblioteca implementada nesta revisão. Contém README e configuração de manutenção; não há código de acesso ao PostgreSQL na branch padrão.",
+    "categories": [],
+    "source": "Curadoria do código: Árvore de arquivos da branch padrão",
+    "projectType": "placeholder"
+  },
+  "jano-sqlserver": {
+    "purpose": "Repositório inicial sem biblioteca implementada nesta revisão. Contém README e configuração de manutenção; não há código de acesso ao SQL Server na branch padrão.",
+    "categories": [],
+    "source": "Curadoria do código: Árvore de arquivos da branch padrão",
+    "projectType": "placeholder"
+  },
+  "lista-de-tarefas-javascript": {
+    "purpose": "Página de estudo em JavaScript para adicionar tarefas por um formulário e marcá-las com caixas de seleção. As tarefas são criadas no DOM, sem persistência neste código.",
+    "categories": [
+      "Aplicações web"
+    ],
+    "source": "Curadoria do código: To-do-list/script.js",
+    "projectType": "example"
+  },
+  "microsoft-bot-hello-world": {
+    "purpose": "Exemplo de bot Microsoft Bot Framework com servidor Restify e endpoint /api/messages. Repete a mensagem do usuário com o prefixo Você disse.",
+    "categories": [
+      "Automação e bots"
+    ],
+    "source": "Curadoria do código: app.js",
+    "projectType": "example"
+  },
+  "OSINT_TIPS": {
+    "purpose": "Lista de recursos de pesquisa em fontes abertas: ferramentas para localizar câmeras, redes sociais e outras informações públicas. É documentação de referência.",
+    "categories": [
+      "Documentação e estudos"
+    ],
+    "source": "Curadoria do código: README.md",
+    "projectType": "documentation"
+  },
+  "juninmd": {
+    "purpose": "README de apresentação do perfil GitHub juninmd, com projetos, tecnologias e recursos visuais do perfil. É uma página de apresentação, não uma aplicação independente.",
+    "categories": [
+      "Documentação e estudos"
+    ],
+    "source": "Curadoria do código: README.md; árvore de arquivos",
+    "projectType": "documentation"
+  },
+  "edge-tts-ts": {
+    "purpose": "Repositório reservado sem código de aplicação nem README nesta revisão. A branch padrão contém apenas arquivos de automação em .github.",
+    "categories": [],
+    "source": "Curadoria do código: Árvore completa de arquivos da branch padrão",
+    "projectType": "placeholder"
+  },
+  "room-booking": {
+    "purpose": "Projeto em C# para gestão de reservas de salas. As premissas documentam cadastro de usuários, aprovação por administrador, notificações e regras de horários; a estrutura inclui API e serviços de domínio.",
+    "categories": [
+      "APIs e serviços"
+    ],
+    "source": "Curadoria do código: docs/premissas.txt; src/RoomBooking.Api; serviços e domínio",
+    "projectType": "application"
+  },
+  "QuebraTexto": {
+    "purpose": "Utilitário de terminal em C# que lê um arquivo de texto, separa a saída em arquivos conforme um limite de linhas informado e converte o conteúdo para minúsculas.",
+    "categories": [
+      "Ferramentas de desenvolvimento"
+    ],
+    "source": "Curadoria do código: QuebraTexto/Program.cs",
+    "projectType": "application"
+  },
+  "awesome-tools": {
+    "purpose": "Coleção de links para ferramentas de desenvolvimento, produtividade, estudos e utilitários. Serve como lista de referências; não é uma aplicação executável.",
+    "categories": [
+      "Documentação e estudos"
+    ],
+    "source": "Curadoria do código: README.md",
+    "projectType": "documentation"
+  },
+  "jules-pub-run-1": {
+    "purpose": "Repositório mínimo de experimento, contendo somente um README com o nome do projeto. Não há código de aplicação na branch padrão nesta revisão.",
+    "categories": [],
+    "source": "Curadoria do código: Árvore completa de arquivos da branch padrão",
+    "projectType": "placeholder"
+  }
+}

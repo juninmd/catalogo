@@ -1,0 +1,9 @@
+.git
+.catalog
+.env
+.env.*
+node_modules
+docs/.vitepress/dist
+docs/.vitepress/cache
+test-results
+playwright-report

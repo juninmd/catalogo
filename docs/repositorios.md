@@ -1,7 +1,6 @@
 ---
-title: Todos os Repositórios
+layout: page
+title: Repositórios
 ---
 
-# Todos os Repositórios
-
-<RepoTable />
+<CatalogApp />

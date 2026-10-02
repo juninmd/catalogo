@@ -6,14 +6,25 @@
   "type": "module",
   "scripts": {
     "generate": "node scripts/generate.mjs",
-    "dev": "node scripts/generate.mjs && vitepress dev docs",
-    "build": "node scripts/generate.mjs && vitepress build docs",
-    "preview": "vitepress preview docs"
+    "dev": "vitepress dev docs",
+    "build": "node scripts/generate.mjs && vitepress build docs && node scripts/pwa.mjs",
+    "preview": "vitepress preview docs",
+    "build:site": "node scripts/ensure-catalog.mjs && vitepress build docs && node scripts/pwa.mjs",
+    "local": "node scripts/local.mjs",
+    "topics:plan": "node scripts/topics.mjs",
+    "topics:apply": "node scripts/topics.mjs --apply",
+    "test": "node --test scripts/*.test.mjs",
+    "test:e2e": "playwright test",
+    "topics:verify": "node scripts/topics.mjs --verify"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "vitepress": "^1.6.3"
   },
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "markdown-it": "^15.0.2"
   }
 }
