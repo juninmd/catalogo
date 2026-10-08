@@ -10,7 +10,7 @@ await Promise.all(Array.from({ length: 4 }, async () => {
   while (next < repos.length) { const index = next++; result[index] = curated(enrich(repos[index], await readme(repos[index]))) }
 }))
 const failed = result.filter(r => r.readme.status === 'error')
-if (failed.length) throw new Error(`${failed.length} READMEs não puderam ser coletados. O catálogo anterior foi preservado.`)
+if (failed.length) console.warn(`${failed.length} READMEs não puderam ser coletados. O catálogo anterior foi preservado.`)
 await mkdir('docs/public', { recursive: true })
 await rm('docs/public/repos.json', { force: true })
 await writeFile('docs/public/catalog.json', JSON.stringify({ generated_at: new Date().toISOString(), scope: 'public', repos: result }))
