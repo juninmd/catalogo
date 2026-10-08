@@ -30,3 +30,8 @@ catalogo/
 - ES modules (`"type": "module"`)
 - Node.js scripting for code generation
 - VitePress markdown-based pages
+
+## MCP
+- `pnpm mcp` - Servidor MCP (stdio) que expõe `docs/public/catalog.json` (rode `pnpm generate` antes)
+- Ferramentas: `list_repos`, `search_repos`, `get_repo`, `list_categories`
+- `.mcp.json` registra o servidor `catalogo` para o Claude Code

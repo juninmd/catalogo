@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "catalogo": { "command": "node", "args": ["scripts/mcp.mjs"] }
+  }
+}

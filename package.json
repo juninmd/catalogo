@@ -15,6 +15,7 @@
     "topics:apply": "node scripts/topics.mjs --apply",
     "test": "node --test scripts/*.test.mjs",
     "test:e2e": "playwright test",
+    "mcp": "node scripts/mcp.mjs",
     "topics:verify": "node scripts/topics.mjs --verify"
   },
   "devDependencies": {
