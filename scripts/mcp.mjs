@@ -2,7 +2,7 @@
 import { readFile } from 'node:fs/promises'
 import { createInterface } from 'node:readline'
 const file = process.env.CATALOG_FILE || new URL('../docs/public/catalog.json', import.meta.url)
-const slim = r => ({ name: r.name, url: r.html_url, purpose: r.purpose, language: r.language, categories: r.categories, topics: r.topics, projectType: r.projectType })
+const slim = r => ({ name: r.name, url: r.url, purpose: r.purpose, language: r.language, categories: r.categories, topics: r.topics, projectType: r.projectType })
 const text = value => ({ content: [{ type: 'text', text: JSON.stringify(value, null, 2) }] })
 async function load() {
   try { return JSON.parse(await readFile(file, 'utf8')) }
