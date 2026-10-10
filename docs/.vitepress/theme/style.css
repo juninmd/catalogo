@@ -4,3 +4,27 @@
 html,body,#app{background:var(--atlas-bg)}.atlas{min-height:100vh}
 .edit-button{color:var(--atlas-accent);font-size:12px;border:1px solid var(--atlas-line);padding:10px 14px;border-radius:5px;margin-bottom:20px}.edit-form{background:var(--atlas-panel);padding:20px;margin-bottom:20px;border:1px solid var(--atlas-line);border-radius:8px}.edit-form>label{display:flex;flex-direction:column;gap:10px;font-size:13px}.edit-form textarea{background:var(--atlas-bg);border:1px solid var(--atlas-line);border-radius:5px;padding:12px;color:var(--atlas-text);resize:vertical}.edit-form fieldset{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0}.edit-form fieldset label{display:flex;gap:8px;align-items:center;font-size:12px}.edit-form legend{font-size:12px;margin-bottom:10px}.edit-form p{font-size:12px;color:var(--atlas-muted);margin:12px 0}.edit-form button{margin-right:16px;font-size:12px}
 .content-status{display:inline-block;border:1px solid var(--atlas-line);padding:5px 10px;border-radius:4px;color:var(--atlas-accent);font-size:12px;margin-bottom:16px}
+
+/* Refinamento visual */
+:root{--atlas-glow:rgba(178,233,205,.14);--atlas-radius:14px;--atlas-shadow:0 18px 40px -22px rgba(0,0,0,.65)}
+.VPPage{background:radial-gradient(900px 480px at 82% -80px,var(--atlas-glow),transparent 70%),radial-gradient(700px 420px at 0 18%,rgba(50,130,105,.12),transparent 70%),var(--atlas-bg);background-repeat:no-repeat}
+.intro h1{background:linear-gradient(180deg,#fff,#c9dcd6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.intro h1 span{background:linear-gradient(90deg,#b2e9cd,#7fd1b0 55%,#5fb8d9);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.brand-mark{background:linear-gradient(135deg,#b2e9cd,#6cc4a1);box-shadow:0 6px 18px -6px rgba(178,233,205,.55)}
+.collection-summary{background:linear-gradient(160deg,rgba(23,37,45,.85),rgba(23,37,45,.35));border:1px solid var(--atlas-line);border-radius:var(--atlas-radius);box-shadow:var(--atlas-shadow);backdrop-filter:blur(6px)}
+.collection-summary strong{background:linear-gradient(180deg,#fff,var(--atlas-accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:500}
+.quiet{transition:.2s;background:rgba(23,37,45,.5)}.quiet:hover{border-color:var(--atlas-accent);color:var(--atlas-accent);transform:translateY(-1px)}
+.shelves{position:sticky;top:84px;align-self:start}
+.shelves button{border-radius:10px;transition:background .18s,color .18s,transform .18s}.shelves button:hover{background:rgba(178,233,205,.08);transform:translateX(2px)}
+.shelves button.chosen{background:linear-gradient(90deg,rgba(178,233,205,.2),rgba(178,233,205,.06));box-shadow:inset 3px 0 0 var(--atlas-accent);color:var(--atlas-accent)}
+.search-box{border-radius:var(--atlas-radius);background:rgba(23,37,45,.75);transition:border-color .2s,box-shadow .2s}.search-box:focus-within{border-color:var(--atlas-accent);box-shadow:0 0 0 4px rgba(178,233,205,.12)}
+.filter-bar select{border-radius:10px;transition:border-color .2s}.filter-bar select:hover{border-color:var(--atlas-accent)}
+.repo-card{position:relative;overflow:hidden;border-radius:var(--atlas-radius);background:linear-gradient(165deg,#1b2c35,#15222a);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.repo-card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,#b2e9cd,#5fb8d9);opacity:0;transition:opacity .22s}
+.repo-card:hover{transform:translateY(-4px);border-color:rgba(178,233,205,.5);box-shadow:var(--atlas-shadow),0 0 0 1px rgba(178,233,205,.12)}.repo-card:hover::before{opacity:1}
+.repo-monogram{background:linear-gradient(135deg,#2c5a4a,#1f4237);border:1px solid rgba(178,233,205,.25);box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.visibility{background:rgba(178,233,205,.1);padding:3px 10px;border-radius:999px;font-size:12px}.visibility.private{background:rgba(236,190,110,.12)}
+.card-category{color:var(--atlas-accent);opacity:.85}
+.repo-dialog{border-radius:18px;box-shadow:0 30px 80px -20px rgba(0,0,0,.8)}.repo-dialog::backdrop{background:rgba(5,10,13,.72);backdrop-filter:blur(5px)}
+@media (max-width:760px){.atlas{padding:20px 18px 48px}.intro{flex-direction:column;align-items:flex-start;gap:24px;padding:36px 0 28px}.collection-summary{width:100%;min-width:0}.shelves{position:static}}
+@media (prefers-reduced-motion:reduce){.repo-card,.shelves button,.quiet{transition:none}.repo-card:hover{transform:none}}

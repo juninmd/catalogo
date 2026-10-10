@@ -6,8 +6,8 @@ import { join } from 'node:path'
 const dir = await mkdtemp(join(tmpdir(), 'mcp-'))
 process.env.CATALOG_FILE = join(dir, 'catalog.json')
 await writeFile(process.env.CATALOG_FILE, JSON.stringify({ repos: [
-  { name: 'alpha', html_url: 'u', purpose: 'Bot de automação', language: 'Python', categories: ['Automação e bots'], topics: [], readme: { status: 'ok', text: 'x' } },
-  { name: 'beta', html_url: 'u2', purpose: 'Site', language: 'JavaScript', categories: ['Aplicações web'], topics: [], readme: { status: 'ok', text: 'y' } },
+  { name: 'alpha', url: 'u', purpose: 'Bot de automação', language: 'Python', categories: ['Automação e bots'], topics: [], readme: { status: 'ok', text: 'x' } },
+  { name: 'beta', url: 'u2', purpose: 'Site', language: 'JavaScript', categories: ['Aplicações web'], topics: [], readme: { status: 'ok', text: 'y' } },
 ] }))
 const { handle } = await import('./mcp.mjs')
 const call = async (name, args) => JSON.parse((await handle({ jsonrpc: '2.0', id: 1, method: 'tools/call', params: { name, arguments: args } })).result.content[0].text)
