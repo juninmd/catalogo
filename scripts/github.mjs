@@ -8,7 +8,7 @@ export function credential() {
 }
 export function redact(text = '') {
   for (const secret of [process.env.GH_TOKEN, process.env.GITHUB_TOKEN, cachedCredential].filter(Boolean)) text = text.split(secret).join('[credencial removida]')
-  return text.replace(/(?:gh[pousr]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[A-Z0-9]{16}|sk-[A-Za-z0-9_-]{20,})/g, '[credencial removida]')
+  return text.replace(/(?:gh[pousr]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[A-Z0-9]{16}|(?<![A-Za-z0-9])sk-[A-Za-z0-9_-]{20,})/g, '[credencial removida]')
     .replace(/-----BEGIN [^-]*PRIVATE KEY-----[\s\S]*?-----END [^-]*PRIVATE KEY-----/g, '[chave removida]')
     .replace(/((?:password|passwd|secret|token|api[_-]?key)\s*[:=]\s*)["']?[^\s"'<>]{8,}/gi, '$1[valor removido]')
 }
@@ -23,7 +23,14 @@ export async function api(path, { token = credential(), method = 'GET', body, at
       await new Promise(resolve => setTimeout(resolve, delay))
       return api(path, { token, method, body, attempt: attempt + 1 })
     }
-    const error = new Error(`GitHub retornou HTTP ${response.status}`); error.status = response.status; throw error
+    const error = new Error(`GitHub retornou HTTP ${response.status}`); error.status = response.status
+    // Primary quota exhausted: callers can stop early and report when it resets.
+    if (response.status === 403 && response.headers.get('x-ratelimit-remaining') === '0') {
+      error.rateLimited = true
+      const reset = Number(response.headers.get('x-ratelimit-reset'))
+      if (reset) error.resetAt = new Date(reset * 1000).toISOString()
+    }
+    throw error
   }
   return response.json()
 }
