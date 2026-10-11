@@ -15,7 +15,10 @@
     "topics:apply": "node scripts/topics.mjs --apply",
     "test": "node --test scripts/*.test.mjs",
     "test:e2e": "playwright test",
-    "topics:verify": "node scripts/topics.mjs --verify"
+    "topics:verify": "node scripts/topics.mjs --verify",
+    "stack:collect": "node scripts/stack-cli.mjs collect",
+    "stack:who": "node scripts/stack-cli.mjs who",
+    "stack:report": "node scripts/stack-cli.mjs report"
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",
