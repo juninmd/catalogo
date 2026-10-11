@@ -51,6 +51,25 @@ A finalidade exibida identifica sua fonte: descrição do GitHub, trecho do READ
 
 Contratos: [topics](https://docs.github.com/en/rest/repos/repos#replace-all-repository-topics) e [READMEs](https://docs.github.com/en/rest/repos/contents#get-a-repository-readme), na documentação oficial do GitHub.
 
+## Índice de stack
+
+Responde "quem usa a dependência X?" e mostra divergências entre repositórios. Tudo é local: o índice fica em `.catalog/stack.json` (ignorado pelo Git) e nunca entra no build, na PWA nem na imagem Docker.
+
+```powershell
+pnpm stack:collect                       # lê manifests e workflows de todos os repositórios próprios (requer gh auth login)
+pnpm stack:who hono                      # quem declara a dependência, com faixa e tipo
+pnpm stack:who hono --range ^4 --json    # filtra pela faixa declarada; --json para pipelines
+pnpm stack:report                        # sem CI, sem lockfile e divergências de workflow/Node/pacotes/Docker
+```
+
+- **Coleta:** uma consulta da árvore por repositório (`git/trees`) e só os arquivos conhecidos: `package.json`, `requirements.txt`, `pyproject.toml`, `Cargo.toml`, `go.mod`, `Dockerfile`, `.nvmrc`/`.node-version` e `.github/workflows/*.yml`. Monorepos entram (até 15 manifests por repositório); `node_modules`, `vendor`, `target`, `dist`, `build` e `.venv` são ignorados. Nenhum outro arquivo é lido.
+- **Incremental:** repositórios com o mesmo `pushed_at` e branch padrão vêm do cache. Se algum falhar, o snapshot anterior é mantido como `desatualizado`, o comando sai com erro e uma nova execução refaz só o que falta.
+- **Cota:** cada repositório custa ~6 chamadas à API (medido: 69 repositórios gastaram ~400), então uma coleta completa de ~500 consome mais da metade das 5 mil chamadas/hora do GitHub. Ao esgotar a cota a coleta para na hora e informa quando tentar de novo; não rode duas coletas completas na mesma hora.
+- **Faixas declaradas, não resolvidas:** `hono@^4.6.14` é o que o manifest pede, não a versão instalada. Credenciais em URLs e valores com forma de token são removidos antes de gravar.
+- **Limites:** em `pyproject.toml` só `[project].dependencies` é lido (`optional-dependencies` e `[tool.poetry.*]` não); em `Cargo.toml` tabelas `[dependencies.nome]` não são lidas. Python nunca é apontado como "sem lockfile", e um lockfile só vale para o seu ecossistema (`Cargo.lock` não cobre um `package.json`).
+- **Lacunas visíveis:** `stack:report` lista árvores truncadas pelo GitHub, manifests com JSON inválido e arquivos acima de 1 MB (não lidos), em vez de indexá-los como vazios. Trocar a versão do índice (`SCHEMA`) invalida o cache.
+- **Divergência:** em cada seção do relatório o maior grupo aparece só com a contagem e os demais listam os repositórios. O maior grupo não é necessariamente o mais novo.
+
 ## Validar
 
 ```powershell

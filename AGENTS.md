@@ -25,6 +25,7 @@ catalogo/
 - `pnpm dev` - Generate + start dev server
 - `pnpm build` - Generate + build for production
 - `pnpm preview` - Preview built site
+- `pnpm stack:collect | stack:who <dep> | stack:report` - Local cross-repo dependency/CI index (`.catalog/stack.json`, never published)
 
 ## Conventions
 - ES modules (`"type": "module"`)
