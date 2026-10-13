@@ -6,6 +6,6 @@ export default defineConfig({
   head: [ ['link', { rel: 'manifest', href: `${base}manifest.webmanifest` }],
     ['link', { rel: 'icon', href: `${base}icon.svg`, type: 'image/svg+xml' }],
     ['meta', { name: 'theme-color', content: '#111d23' }] ],
-  themeConfig: { nav: [{ text: 'Biblioteca', link: '/' }, { text: 'GitHub', link: 'https://github.com/juninmd' }],
+  themeConfig: { nav: [{ text: 'Biblioteca', link: '/' }, { text: 'Carrossel', link: '/carrossel' }, { text: 'GitHub', link: 'https://github.com/juninmd' }],
     footer: { message: 'Atlas · Um lugar para todas as suas ideias.' } }
 })

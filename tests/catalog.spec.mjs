@@ -131,3 +131,74 @@ test('PWA manifest and installability are accepted by the browser', async () => 
     expect(eligibility.installabilityErrors).toEqual([])
   } finally { await context.close() }
 })
+
+test('carousel prototype renders name, description, README, navigation, list switch and deletion with confirmation', async ({ page }) => {
+  await publicUI(page)
+  // Go to carousel view
+  await page.getByRole('button', { name: 'Carrossel', exact: true }).click()
+  await expect(page.locator('.carousel-prototype')).toBeVisible()
+
+  // Verify app name, description and README are rendered
+  const initialName = await page.locator('.carousel-header-text h3').textContent()
+  expect(initialName.trim().length).toBeGreaterThan(0)
+  await expect(page.locator('.carousel-purpose')).toBeVisible()
+  await expect(page.locator('.carousel-readme-pane')).toBeVisible()
+
+  // Test Próximo button
+  const nextBtn = page.getByRole('button', { name: 'Próximo →' })
+  await nextBtn.click()
+  const secondName = await page.locator('.carousel-header-text h3').textContent()
+  expect(secondName).not.toBe(initialName)
+
+  // Test Anterior button
+  const prevBtn = page.getByRole('button', { name: '← Anterior' })
+  await prevBtn.click()
+  const backName = await page.locator('.carousel-header-text h3').textContent()
+  expect(backName).toBe(initialName)
+
+  // Test Arrow keys navigation (keyboard shortcuts)
+  await page.keyboard.press('ArrowRight')
+  expect(await page.locator('.carousel-header-text h3').textContent()).toBe(secondName)
+  await page.keyboard.press('ArrowLeft')
+  expect(await page.locator('.carousel-header-text h3').textContent()).toBe(initialName)
+
+  // Test Lista button
+  await page.getByRole('button', { name: '☰ Lista' }).click()
+  await expect(page.locator('.repo-grid')).toBeVisible()
+
+  // Return to Carousel view
+  await page.getByRole('button', { name: 'Carrossel', exact: true }).click()
+  await expect(page.locator('.carousel-prototype')).toBeVisible()
+
+  // Take screenshot of carousel view
+  await page.screenshot({ path: '.catalog/prototype-carousel-view.png', fullPage: true })
+
+  // Test Excluir repositório with confirmation
+  await page.getByRole('button', { name: '🗑 Excluir repositório' }).click()
+  const confirmDialog = page.locator('.confirm-dialog')
+  await expect(confirmDialog).toBeVisible()
+  await expect(confirmDialog).toContainText('Tem certeza de que deseja excluir o repositório')
+
+  // Take screenshot of delete confirmation dialog
+  await page.screenshot({ path: '.catalog/prototype-delete-confirmation.png', fullPage: true })
+
+  // Cancel deletion first
+  await confirmDialog.getByRole('button', { name: 'Cancelar' }).click()
+  await expect(confirmDialog).not.toBeVisible()
+  expect(await page.locator('.carousel-header-text h3').textContent()).toBe(initialName)
+
+  // Re-open and confirm deletion
+  await page.getByRole('button', { name: '🗑 Excluir repositório' }).click()
+  await expect(confirmDialog).toBeVisible()
+  await confirmDialog.getByRole('button', { name: 'Sim, excluir repositório' }).click()
+  await expect(confirmDialog).not.toBeVisible()
+
+  // Verify repository was removed and feedback is shown
+  await expect(page.locator('.feedback-toast')).toBeVisible()
+  await expect(page.locator('.feedback-toast')).toContainText('excluído com sucesso')
+  const newCurrentName = await page.locator('.carousel-header-text h3').textContent()
+  expect(newCurrentName).not.toBe(initialName)
+
+  // Take screenshot of toast feedback
+  await page.screenshot({ path: '.catalog/prototype-toast-feedback.png', fullPage: true })
+})
