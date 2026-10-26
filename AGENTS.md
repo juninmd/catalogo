@@ -14,15 +14,15 @@ catalogo/
     .vitepress/       # VitePress config
     public/           # Static assets
     index.md          # Home page
-    repositorios.md   # Auto-generated repo list
+    repositorios.md   # Static page that reads the generated catalog
   scripts/
-    generate.mjs      # GitHub API fetch + site generation
+    generate.mjs      # GitHub API fetch -> docs/public/catalog.json (public repos only)
   package.json
 ```
 
 ## Commands
-- `pnpm generate` - Fetch repos and update site
-- `pnpm dev` - Generate + start dev server
+- `pnpm generate` - Fetch public repos into `docs/public/catalog.json`
+- `pnpm dev` - Start the VitePress dev server (run `pnpm generate` first)
 - `pnpm build` - Generate + build for production
 - `pnpm preview` - Preview built site
 - `pnpm stack:collect | stack:who <dep> | stack:report` - Local cross-repo dependency/CI index (`.catalog/stack.json`, never published)
