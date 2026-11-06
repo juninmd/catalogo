@@ -21,3 +21,7 @@ COPY --from=builder /app/docs/.vitepress/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
+
+# executa app sem privilegio (DS-0002)
+RUN addgroup -g 10001 app && adduser -u 10001 -G app -s /bin/sh -D app
+USER app
